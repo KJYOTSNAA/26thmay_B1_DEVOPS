@@ -7,6 +7,5 @@
 
 
 ## task2
-'''Q1 Add user with specific shell'''
 ### solution
 <img src="Task2-(1).png">
