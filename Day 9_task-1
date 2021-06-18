@@ -1,0 +1,12 @@
+## BlOCK a specific IP address for ssh
+ubuntu@ip-172-31-42-104:~$ sudo iptables -I INPUT -s 172.31.42.104 -p tcp --dport ssh -j REJECT
+
+Acccess from your ssh server from your mobile using termux
+1.check ssh is working not 
+   $ ssh
+2. if  there is no ssh install it by 
+   $ pkg install openssh
+3. them ssh from your mobile
+   $ ssh ubuntu@172.31.42.104
+   
+   
