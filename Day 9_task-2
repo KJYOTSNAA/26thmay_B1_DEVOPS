@@ -1,0 +1,8 @@
+To change the port number for ssh 
+$ sudo vim /etc/ssh/sshd_config
+ Remove #  and Change port number from line
+#port =new_port 27
+
+Then ssh to that machine using new port number 
+$ systemctl restart ssh 
+$ ssh -p new_port 27 ubuntu@172.31.42.104
