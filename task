@@ -1,0 +1,24 @@
+#task 
+
+## Q1 create one directory new at location /mnt
+solu:-
+ubuntu@ip-172-31-36-28:~$ sudo -i
+root@ip-172-31-36-28:~# mkdir /mnt/New
+#to check the New directory
+root@ip-172-31-36-28:~# cd /mnt
+root@ip-172-31-36-28:/mnt# ls
+New
+
+## Q2 creat a volume using AWS EBS and attches to your ubantu instance 
+step1
+1. got to the navigation pane, choose Elastic Block Store, Volumes.
+2. click on creat volume 
+3. deside  the size of the volume (5gb seleted)
+4. make sure that your Availability Zone is same to your instance which you are attching 
+5. lastly creat the Volume
+step2
+1. and go back and selecte your created volume and go to the action 
+2. select  attach volume 
+3. select your instance
+step3
+check the output
