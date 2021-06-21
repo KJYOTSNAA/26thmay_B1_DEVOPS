@@ -4,3 +4,5 @@
 <img src=q1.png>
 
 ### Q2
+<img src=q2.png>
+
