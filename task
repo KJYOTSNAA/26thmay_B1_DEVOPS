@@ -26,3 +26,69 @@ check the output
 
 
 ## Q3 Create a partition and mount it on /mnt/new
+ubantu$ sudo -i
+root# fdisk /dev/xvdf
+'''
+Command (m for help): m
+
+Help:
+
+  DOS (MBR)
+   a   toggle a bootable flag
+   b   edit nested BSD disklabel
+   c   toggle the dos compatibility flag
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+   
+  Misc
+   m   print this menu
+   u   change display/entry units
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+  Misc
+   m   print this menu
+   u   change display/entry units
+   x   extra functionality (experts only)
+ '''
+   
+"n"        //for new partition
+enter    //partition type
+enter    // 1-4 (no)
+enter    // first sector
+"+500M" // last sector 
+"p"       // for printing the created partition
+"w"      // save 
+root# mkfs.xfs  /dev/xvdf
+root# mount  /dev/xvdf1 /mnt/new
+root# df-hT 
+
+
+## Q4.Install apache web server
+ubantu@ubantu-HCL-Desktop:~$ sudo apt install apache2
+// for installing 
+
+ubantu@ubantu-HCL-Desktop:~$ sudo systemctl status apache2
+//for chacking status of apache2
+
