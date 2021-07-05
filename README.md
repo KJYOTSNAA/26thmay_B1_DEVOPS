@@ -15,3 +15,24 @@
 ```
 <img src=op2.png>
 
+## Q3 create a foulder
+```
+1 after bucket creation click on  your bucket's name
+2 click on create folder > name it. > again click on creat folder which was given down
+3 click on the name of the folder which u created 
+4  go to upload  >add file > then add tha index.html
+```
+<img src=op3a.png>
+<img src=op3b.png>
+
+## Q4 public access
+```
+go back to your bucket 
+1 goto  permission 
+2 Block public access (bucket settings)> edit
+3 then untick the  block public access 
+```
+<img src=op4.png>
+
+
+
