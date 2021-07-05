@@ -2,11 +2,11 @@
 ## TASK OUTPUT
 
 ### 1QUESTION
-<img src=output 1.png>
+<img src=output1.png>
 
 
 
 
 ### 2QUESTION
-<img src=output 2.png>
+<img src=output2.png>
 
