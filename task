@@ -1,0 +1,22 @@
+##1 Create a volume using  AWS EBS and attach to your ubuntu instance and mount it to /root/welcome
+
+root-# fdisk /dev/xvdf>
+<n>        //for new partition
+enter    //partition type
+enter    // 1-4 (no)
+enter    // first sector
+<+500M> // last sector 
+<p>        // for printing the created partition
+<w>      // save 
+root-# lsblk
+root-# mkfs.xfs /dev/xvdf1
+root-# mkdir welcome/new
+root-# mount /dev/xvdf1 welcome/new
+
+
+##2. Create a index.html in that having "HII LNB" written in that in mounted location
+root-# vim index.html
+// then write "HII LNB"
+// after complition ctrl+c 
+// then ":wq" for save
+root-# umount welcome/new
