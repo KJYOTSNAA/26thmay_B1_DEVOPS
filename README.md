@@ -46,7 +46,11 @@ $ sudo usermod -aG docker $USER
 ```
 $ newgrp docker
 ```
-
+### To check status of Docker
+```
+$ sudo systemctl status docker
+``` 
+<img src=statusdocker.png>
 
 Q2
 ## Pull ubuntu:20.04 docker image
@@ -56,6 +60,8 @@ $ docker pull ubuntu:20.04
 ```
 <img src=pullimage.png>
 
+Q3
+## Perform start ,stop and pause operations on a container made from ubuntu:20.04 image.
 
 
 
