@@ -1,0 +1,5 @@
+1. What is alpine image?
+A minimal Docker image based on Alpine Linux with a complete package index and only 5 MB in size
+
+
+2. Create a container with name example using ubuntu:20.04 docker image with a process that should run in the background.
