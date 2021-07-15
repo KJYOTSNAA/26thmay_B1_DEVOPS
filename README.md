@@ -77,12 +77,14 @@ docker stop 28a10370c5ac
 28a10370c5ac is the Contaner ID
 
 <img src=stop.png>
+
 ### pause
 
 ```
 docker pause 4cf60b2ca5dc
 ```
 <img src=pause.png>
+
 ### unpause
 
 ```
