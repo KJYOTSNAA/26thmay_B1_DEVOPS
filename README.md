@@ -83,7 +83,11 @@ docker stop 28a10370c5ac
 docker pause 4cf60b2ca5dc
 ```
 <img src=pause.png>
+### unpause
 
+```
+docker unpause 4cf60b2ca5dc 
+```
 docker ps - to check the container status
 
 
