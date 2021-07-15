@@ -68,7 +68,8 @@ Q3
 docker run -d ubuntu:20.04 sleep 300
 ```
 <img src=run.png>
-### stop
+
+###  stop
 
 ```
 docker stop 28a10370c5ac
