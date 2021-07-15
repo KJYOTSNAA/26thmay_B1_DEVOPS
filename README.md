@@ -62,13 +62,32 @@ $ docker pull ubuntu:20.04
 
 Q3
 ## Perform start ,stop and pause operations on a container made from ubuntu:20.04 image.
+### start 
+```
+docker run -d ubuntu:20.04 sleep 300
+```
+<img src=run.png>
+### stop
+```
+docker stop 28a10370c5ac
+```
+// 28a10370c5ac is the Contaner ID
+<img src=stop.png>
+### pause
+```
+docker pause 4cf60b2ca5dc
+```
+<img src=pause.png>
+
+//docker ps - to check the container status
 
 
+## 4.In the launched container above get bash shell of the container
 
-
-
-
-
-
+```
+docker start 4cf60b2ca5dc 
+docker exec -it 4cf60b2ca5dc  bash
+```
+<img src=bash.png>
 
 
