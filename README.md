@@ -75,6 +75,7 @@ docker run -d ubuntu:20.04 sleep 300
 docker stop 28a10370c5ac
 ```
 28a10370c5ac is the Contaner ID
+
 <img src=stop.png>
 ### pause
 
